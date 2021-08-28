@@ -1,0 +1,252 @@
+body {
+  font-family: "Poppins";
+}
+.navbar {
+  height: 50px;
+  bottom: 0;
+  right: 35%;
+  left: 35%;
+  position: fixed;
+  align-self: center;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+
+.navIcon {
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  padding-top: 8px;
+}
+
+.navIcon:hover {
+  color: #f9f9f9;
+  background-color: #5188f5;
+}
+
+.gridContainer {
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;
+  position: fixed;
+  overflow-y: scroll;
+}
+
+.gridContainer a {
+  text-decoration: none;
+}
+
+.gridContainer ul {
+  list-style: none;
+}
+
+.dtable {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 0 50px #ccc;
+  margin: 20px;
+  text-align: center;
+}
+
+.dtinput {
+  font-family: "Poppins";
+  font-size: 12px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.tableNo {
+  color: black;
+  font-weight: bold;
+}
+
+.chairNo {
+  color: #316fec;
+  font-weight: bold;
+}
+
+.statusTable {
+  width: 70px;
+  height: 10px;
+}
+
+.statusTableA {
+  color: black;
+  border-radius: 12px;
+  background-color: #26d175;
+  font-weight: 100;
+}
+
+.statusTableNA {
+  color: black;
+  border-radius: 12px;
+  background-color: #999;
+}
+
+.notitable {
+  margin-top: 10px;
+}
+
+.topNave {
+  height: 50px;
+  top: 0;
+  right: 30%;
+  left: 30%;
+  overflow: hidden;
+  position: fixed;
+  align-self: center;
+  background-color: #fff;
+}
+
+.topNave a {
+  text-decoration: none;
+}
+
+.categoryName {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.itemContainer ul {
+  list-style: none;
+}
+
+.title {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.listitem {
+  width: 100%;
+  height: 50px;
+  font-weight: bold;
+}
+
+.listitem a {
+  text-decoration: none;
+  color: #999;
+}
+
+.listCat {
+  height: 80%;
+  overflow-y: scroll;
+}
+
+.listCat ul {
+  list-style: square outside none;
+}
+
+.fileInput {
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+.imgPreview {
+  text-align: center;
+  height: 150px;
+  width: 150px;
+}
+
+.imgPreview img {
+  width: 50%;
+  height: 50%;
+}
+
+.previewText {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.centerText {
+  text-align: center;
+  width: 500px;
+}
+
+.datatable {
+  height: 300px;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.orderItem {
+  width: 100%;
+  height: 500px;
+  margin-top: 20px;
+  position: relative;
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  font-family: "Poppins";
+}
+
+.tablecontainer {
+  height: 400px;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.detailscontainer {
+  height: 400px;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.verticalLine {
+  height: 100%;
+  width: 1px;
+  position: absolute;
+  background-color: black;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  align-self: center;
+}
+
+.active {
+  color: #5a3cdf;
+}
+
+/* custom scroll bar start */
+::-webkit-scrollbar {
+  height: 8px;
+  width: 6px;
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #daf7a6;
+  -webkit-border-radius: 4ex;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+  background: #000;
+}
+/* custom scroll bar ends */
+
+@media only screen and (max-width: 800px) {
+  .navbar {
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .topNave {
+    right: 0;
+    left: 0;
+  }
+}
