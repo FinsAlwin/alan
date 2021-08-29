@@ -1,7 +1,8 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
-from api.models import Category, CategoryImage, Items, ItemsImage, Tables, TableImage, TypeEst
+from api.models import Category, CategoryImage, Items, ItemsImage, Tables, TableImage, TypeEst, Profile
+from api.serializers import UserSerializer
 # from .models import Items
 
 class CategoryImageSerializer(serializers.ModelSerializer):
@@ -49,5 +50,9 @@ class TypeSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
+class ProfileSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Profile
+        fields = "__all__"
     
     

@@ -1,8 +1,9 @@
 from rest_framework import  permissions, viewsets, views
-from .serializers import CategorySerializer, ItemsSerializer, TablesSerializer, CategoryImageSerializer, ItemImageSerializer, TablesImageSerializer, TypeSerializer
-from api.models import Category, Items, Tables, CategoryImage, ItemsImage, TableImage, TypeEst
+from .serializers import CategorySerializer, ItemsSerializer, TablesSerializer, CategoryImageSerializer, ItemImageSerializer, TablesImageSerializer, TypeSerializer, ProfileSerializer
+from api.models import Category, Items, Tables, CategoryImage, ItemsImage, TableImage, TypeEst, Profile
 from rest_framework.decorators import action
 from rest_framework.response import Response
+
 
 class CategoryViewset(viewsets.ModelViewSet):
     permission_classes = [
@@ -128,4 +129,15 @@ class TypeViewSet(viewsets.ModelViewSet):
     queryset = TypeEst.objects.all()
     serializer_class = TypeSerializer
 
+class ProfileGet(viewsets.ModelViewSet):
+    permission_classes = [
+        permissions.IsAuthenticated,
+    ]
+    queryset = Profile.objects.all()
+    serializer_class = ProfileSerializer
 
+    def get_queryset(self):
+        return self.request.user.userProfile.all()
+
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)

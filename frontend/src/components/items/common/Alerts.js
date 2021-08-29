@@ -37,6 +37,7 @@ export class Alerts extends Component {
       if (message.deleteTable) alert.success(message.deleteTable);
       if (message.addTableImg) alert.success(message.addTableImg);
       if (message.deleteTableImg) alert.success(message.deleteTableImg);
+      if (message.updateProfile) alert.success(message.updateProfile);
       if (message.passwordNotMatch) alert.error(message.passwordNotMatch);
     }
   }

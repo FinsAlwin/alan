@@ -65,5 +65,14 @@ class TableImage(models.Model):
 class TypeEst(models.Model):
     typeId = models.AutoField(primary_key=True)
     type = models.CharField(max_length=100)
-    
+
+class Profile(models.Model):
+    profileId = models.AutoField(primary_key=True)
+    resturantName = models.CharField(max_length=100)
+    phone = models.IntegerField(max_length=15)
+    description = models.CharField(max_length=200)
+    user = models.ForeignKey(
+        User, related_name="userProfile", on_delete=models.CASCADE, null=True)
+    typeItem = models.ForeignKey(
+        TypeEst, related_name="typeitem", on_delete=models.CASCADE, null=True)
     

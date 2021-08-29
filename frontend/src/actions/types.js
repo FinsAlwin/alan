@@ -43,3 +43,6 @@ export const GET_TABLE_IMG = "GET_TABLE_IMG";
 export const EDIT_TABLE_IMG = "EDIT_TABLE_IMG";
 export const GET_EDIT_TABLE_IMG = "GET_EDIT_TABLE_IMG";
 export const DELETE_TABLE_IMG = "DELETE_TABLE_IMG";
+
+export const GET_PROFILE = "GET_PROFILE";
+export const UPDATED_PROFILE = "UPDATED_PROFILE";
