@@ -14,6 +14,9 @@ import errors from "./errors";
 import messages from "./messages";
 import tableImg from "./tableImage";
 import tableImgOne from "./tableImageOne";
+import profile from "./profile";
+import type from "./typeOf";
+import updateprofile from "./updateProfile";
 
 export default combineReducers({
   messages,
@@ -31,4 +34,7 @@ export default combineReducers({
   itemImgitem,
   tableImg,
   tableImgOne,
+  profile,
+  type,
+  updateprofile,
 });

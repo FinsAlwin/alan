@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from "react";
 
 import DiningTable from "./diningTable";
+import AuthCard from "./authCard";
+import ProfileCard from "./profileCard";
 
 class Dashboard extends Component {
   render() {
@@ -10,22 +12,10 @@ class Dashboard extends Component {
           <div className="tile is-ancestor">
             <div className="tile is-4 is-vertical is-parent">
               <div className="tile is-child box">
-                <p className="title">One</p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                  ornare magna eros, eu pellentesque tortor vestibulum ut.
-                  Maecenas non massa sem. Etiam finibus odio quis feugiat
-                  facilisis.
-                </p>
+                <AuthCard />
               </div>
               <div className="tile is-child box">
-                <p className="title">Two</p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                  ornare magna eros, eu pellentesque tortor vestibulum ut.
-                  Maecenas non massa sem. Etiam finibus odio quis feugiat
-                  facilisis.
-                </p>
+                <ProfileCard />
               </div>
             </div>
             <div className="tile is-parent">

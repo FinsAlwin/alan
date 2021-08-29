@@ -30,38 +30,54 @@ class Login extends Component {
     }
     const { username, password } = this.state;
     return (
-      <div className="col-md-6 m-auto">
-        <div className="card card-body mt-5">
-          <img className="logo" src={logo} />
-          <form onSubmit={this.onSubmit}>
-            <div className="form-group">
-              <label>Username</label>
-              <input
-                type="text"
-                className="form-control"
-                name="username"
-                onChange={this.onChange}
-                value={username}
-              />
+      <div className="hero is-fullheight is-link">
+        <div className="hero-body">
+          <div className="container has-text-centered">
+            <div className="column is-4 is-offset-4">
+              <div className="box">
+                <div className="box">
+                  <img src="https://miro.medium.com/proxy/0*4fHRBbNhF_1jpdCM.jpeg" />
+                </div>
+              </div>
+              <form onSubmit={this.onSubmit}>
+                <div className="field">
+                  <div className="control">
+                    <input
+                      className="input is-small is-primary"
+                      type="text"
+                      placeholder="Username"
+                      autoFocus=""
+                      name="username"
+                      onChange={this.onChange}
+                      value={username}
+                    />
+                  </div>
+                </div>
+                <div className="field">
+                  <div className="control">
+                    <input
+                      className="input is-small is-primary"
+                      type="password"
+                      placeholder="Password"
+                      name="password"
+                      onChange={this.onChange}
+                      value={password}
+                    />
+                  </div>
+                </div>
+                <div className="field">
+                  <div className="control">
+                    <button
+                      type="submit"
+                      className="button is-block is-dark is-small is-fullwidth"
+                    >
+                      Login
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
-
-            <div className="form-group">
-              <label>Password</label>
-              <input
-                type="password"
-                className="form-control"
-                name="password"
-                onChange={this.onChange}
-                value={password}
-              />
-            </div>
-
-            <div className="form-group">
-              <button type="submit" className="btn btn-primary">
-                Login
-              </button>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
     );

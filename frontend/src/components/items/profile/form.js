@@ -1,7 +1,19 @@
 import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
+import { getType } from "../../../actions/typeOf";
 
 class Form extends Component {
+  static propTypes = {
+    type: PropTypes.array.isRequired,
+    getType: PropTypes.func.isRequired,
+  };
+
+  componentDidMount() {
+    this.props.getType();
+  }
+
   render() {
     return (
       <Fragment>
@@ -27,8 +39,12 @@ class Form extends Component {
                       <div className="form-group">
                         <div className="select is-primary">
                           <select>
-                            <option>Select Type</option>
-                            <option>With options</option>
+                            <option>Select category</option>
+                            {this.props.type.map((type) => (
+                              <option key={type.typeId} value={type.type}>
+                                {type.type}
+                              </option>
+                            ))}
                           </select>
                         </div>
                       </div>
@@ -105,4 +121,8 @@ class Form extends Component {
   }
 }
 
-export default Form;
+const mapStateToProps = (state) => ({
+  type: state.type.type,
+});
+
+export default connect(mapStateToProps, { getType })(Form);

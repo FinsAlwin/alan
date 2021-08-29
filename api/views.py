@@ -21,13 +21,15 @@ class ProfileView(APIView):
         phoneData = body_data['phone']
         passwordData = body_data['password']
         descriptionData = body_data['description']
+        useridData = body_data['userid']
 
         if request.user.is_authenticated:
            current_user = request.user
            
            if TypeEst.objects.filter(typeId=typeData).exists():
             typbeObject = TypeEst.objects.get(typeId=typeData)
-            profile = Profile.objects.get(profileId=profileIdData)
+            
+            profile = Profile.objects.get(user=useridData)
             
             profile.__dict__.update(resturantName=resturantNameData, 
                                         typeItem=typbeObject, description=descriptionData, 
@@ -39,8 +41,10 @@ class ProfileView(APIView):
 
             current_user.set_password(passwordData)  # replace with your real password
             current_user.save()
+
+           
             
-            data = {"Success"}
+            data = {"data": "Success"}
            else:
              data={"Key Empty or missing"}
         else:

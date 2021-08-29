@@ -13,7 +13,7 @@ class DiningIcon extends Component {
 
     const notitab = this.props.notify;
     let notifyC;
-    if (notitab == "1") {
+    if (notitab == "true") {
       notifyC = (
         <div className="notitable">
           <NotificationImportantIcon style={{ color: "#ec3131" }} />

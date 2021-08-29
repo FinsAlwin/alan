@@ -1,7 +1,7 @@
 import { GET_EDIT_TABLE } from "../actions/types.js";
 
 const initialState = {
-  tablesOne: null,
+  tablesOne: [],
 };
 
 export default function (state = initialState, action) {

@@ -10,3 +10,5 @@ admin.site.register(Tables)
 admin.site.register(TableImage)
 admin.site.register(TypeEst)
 admin.site.register(Profile)
+
+admin.site.site_header = "Yumme"

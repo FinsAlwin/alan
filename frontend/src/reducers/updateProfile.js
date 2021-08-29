@@ -1,16 +1,17 @@
-import { GET_PROFILE } from "../actions/types.js";
+import { UPDATED_PROFILE } from "../actions/types.js";
 
 const initialState = {
-  profile: [],
+  updateprofile: [],
 };
 
 export default function (state = initialState, action) {
   switch (action.type) {
-    case GET_PROFILE:
+    case UPDATED_PROFILE:
       return {
         ...state,
-        profile: action.payload,
+        updateprofile: [...state.updateprofile, action.updateprofile],
       };
+
     default:
       return state;
   }

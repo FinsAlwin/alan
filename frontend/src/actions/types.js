@@ -46,3 +46,5 @@ export const DELETE_TABLE_IMG = "DELETE_TABLE_IMG";
 
 export const GET_PROFILE = "GET_PROFILE";
 export const UPDATED_PROFILE = "UPDATED_PROFILE";
+
+export const GET_TYPE = "GET_TYPE";
