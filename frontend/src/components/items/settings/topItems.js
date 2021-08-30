@@ -14,7 +14,7 @@ class TopItems extends Component {
         <div className="tabs is-centered is-small is-toggle is-toggle-rounded">
           <ul>
             <li>
-              <NavLink to="/settings/category" activeClassName="active">
+              <NavLink to="/category" activeClassName="active">
                 <span className="icon is-small">
                   <CategoryIcon style={{ color: "#5188f5" }} />
                 </span>
@@ -22,7 +22,7 @@ class TopItems extends Component {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/settings/additems" activeClassName="active">
+              <NavLink to="/additems" activeClassName="active">
                 <span className="icon is-small">
                   <PostAddIcon style={{ color: "#5188f5" }} />
                 </span>
@@ -30,7 +30,7 @@ class TopItems extends Component {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/settings/tables" activeClassName="active">
+              <NavLink to="/tables" activeClassName="active">
                 <span className="icon is-small">
                   <TableChartIcon style={{ color: "#5188f5" }} />
                 </span>
@@ -38,7 +38,7 @@ class TopItems extends Component {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/settings/profile" activeClassName="active">
+              <NavLink to="/profile" activeClassName="active">
                 <span className="icon is-small">
                   <AccountCircleIcon style={{ color: "#5188f5" }} />
                 </span>

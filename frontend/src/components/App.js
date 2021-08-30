@@ -25,6 +25,9 @@ import History from "./items/home/history";
 import Notifications from "./items/notification/notifications";
 import BottomNavBar from "./items/layout/bottomNavBar";
 import PrivateRoute from "./items/common/PrivateRoute";
+import NotFound from "./items/NotFound";
+
+import Customer from "./items/customer/customer";
 
 import { Provider } from "react-redux";
 import store from "../store";
@@ -48,26 +51,10 @@ class App extends Component {
               <Alerts />
               <Switch>
                 <PrivateRoute exact path="/" component={Dashboard} />
-                <PrivateRoute
-                  exact
-                  path="/settings/category"
-                  component={Category}
-                />
-                <PrivateRoute
-                  exact
-                  path="/settings/additems"
-                  component={AddItems}
-                />
-                <PrivateRoute
-                  exact
-                  path="/settings/tables"
-                  component={Tables}
-                />
-                <PrivateRoute
-                  exact
-                  path="/settings/profile"
-                  component={Profile}
-                />
+                <PrivateRoute exact path="/category" component={Category} />
+                <PrivateRoute exact path="/additems" component={AddItems} />
+                <PrivateRoute exact path="/tables" component={Tables} />
+                <PrivateRoute exact path="/profile" component={Profile} />
                 <PrivateRoute exact path="/orders" component={Orders} />
                 <PrivateRoute exact path="/history" component={History} />
                 <PrivateRoute
@@ -76,6 +63,8 @@ class App extends Component {
                   component={Notifications}
                 />
                 <Route exact path="/login" component={Login} />
+                <Route path="/:userid/:tableid" children={<Customer />} />
+                <Route component={NotFound} />
               </Switch>
               <BottomNavBar />
             </Fragment>

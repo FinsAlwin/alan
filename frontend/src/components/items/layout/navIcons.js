@@ -25,7 +25,7 @@ class NavIcon extends Component {
       <Fragment>
         <div className="columns is-mobile">
           <div className="column is-2">
-            <NavLink to="/settings/category" activeClassName="active">
+            <NavLink to="/category" activeClassName="active">
               <div className="navIcon">
                 <SettingsIcon />
               </div>
