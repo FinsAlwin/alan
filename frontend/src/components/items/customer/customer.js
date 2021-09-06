@@ -2,16 +2,22 @@ import React, { Component, Fragment } from "react";
 
 import { useParams, Redirect } from "react-router-dom";
 
+import Header from "./header";
+import Banner from "./banner";
+import CategoryFront from "./categoryFront";
+import Footer from "./footer";
+import banner from "../img/banner.svg";
+
 function Customer() {
-  // We can use the `useParams` hook here to access
-  // the dynamic pieces of the URL.
   let { userid, tableid } = useParams();
 
   if (userid == "alwin") {
     return (
       <Fragment>
-        <h3>User: {userid}</h3>
-        <h3>Table: {tableid}</h3>
+        <Header title="Alwin's Club" />
+        <Banner banner={banner} />
+        <CategoryFront />
+        <Footer />
       </Fragment>
     );
   } else {

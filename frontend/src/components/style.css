@@ -1,5 +1,6 @@
 body {
   font-family: "Poppins";
+  background-color: #f9f9ff;
 }
 .navbar {
   height: 50px;
@@ -249,4 +250,21 @@ body {
     right: 0;
     left: 0;
   }
+}
+
+/* custom frontend ends */
+
+.cust-title {
+  font-size: 26px;
+  text-align: center;
+  padding-top: 35px;
+  color: #b493bf;
+}
+
+.cust-img-container {
+  text-align: center;
+}
+
+.banner {
+  text-align: center;
 }
