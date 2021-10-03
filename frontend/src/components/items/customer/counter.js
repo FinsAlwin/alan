@@ -22,13 +22,14 @@ class Counter extends Component {
       <Fragment>
         <div className="columns is-mobile">
           <div className="column is-4">
-            <div className="number">{this.state.clicks}</div>
-          </div>
-          <div className="column is-4">
             <button className="button btnm" onClick={this.decrementClicks}>
               -
             </button>
           </div>
+          <div className="column is-4">
+            <div className="number">{this.state.clicks}</div>
+          </div>
+
           <div className="column is-4">
             <button className="button btnp" onClick={this.incrementClicks}>
               +

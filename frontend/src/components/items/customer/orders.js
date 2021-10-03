@@ -10,56 +10,39 @@ class Orders extends Component {
             <div className="columns is-mobile">
               <div className="column is-6">
                 <div className="nameOrder">Vegetables Meat</div>
+                <span className="ordertotal">Total:</span>
+                <span className="ordertotaln">50.00USD</span>
               </div>
-              <div className="column is-6">
+              <div className="column is-5">
                 <Counter />
               </div>
             </div>
-            <span className="ordertotal">Total:</span>
-            <span className="ordertotaln">50.00USD</span>
-            <hr />
           </div>
-
+          <hr />
           <div className="orderTitle">
             <div className="columns is-mobile">
               <div className="column is-6">
                 <div className="nameOrder">Vegetables Meat</div>
+                <span className="ordertotal">Total:</span>
+                <span className="ordertotaln">50.00USD</span>
               </div>
-              <div className="column is-6">
+              <div className="column is-5">
                 <Counter />
               </div>
             </div>
-            <span className="ordertotal">Total:</span>
-            <span className="ordertotaln">50.00USD</span>
-            <hr />
           </div>
-
+          <hr />
           <div className="orderTitle">
             <div className="columns is-mobile">
               <div className="column is-6">
                 <div className="nameOrder">Vegetables Meat</div>
+                <span className="ordertotal">Total:</span>
+                <span className="ordertotaln">50.00USD</span>
               </div>
-              <div className="column is-6">
+              <div className="column is-5">
                 <Counter />
               </div>
             </div>
-            <span className="ordertotal">Total:</span>
-            <span className="ordertotaln">50.00USD</span>
-            <hr />
-          </div>
-
-          <div className="orderTitle">
-            <div className="columns is-mobile">
-              <div className="column is-6">
-                <div className="nameOrder">Vegetables Meat</div>
-              </div>
-              <div className="column is-6">
-                <Counter />
-              </div>
-            </div>
-            <span className="ordertotal">Total:</span>
-            <span className="ordertotaln">50.00USD</span>
-            <hr />
           </div>
         </div>
         <div className="orderT">
@@ -71,20 +54,12 @@ class Orders extends Component {
               <span className="ordertotaln">50.00USD</span>
             </div>
           </div>
+
           <div className="columns is-mobile">
             <div className="column is-6">
-              <span className="ordertotal">Total Tax</span>
-              <span className="ordertotaltaxN">18%</span>
-            </div>
-            <div className="column is-6">
-              <span className="ordertotaln">8.00USD</span>
-            </div>
-          </div>
-          <div className="columns is-mobile">
-            <div className="column is-4">
               <span className="ordertotal">Tip</span>
             </div>
-            <div className="column is-8">
+            <div className="column is-4">
               <Counter />
             </div>
           </div>

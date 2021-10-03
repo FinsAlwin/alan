@@ -18,13 +18,13 @@ export default function Footer() {
       <Link to="#" onClick={toggleModal}>
         <div className="cartDiv">
           <div className="columns is-mobile">
-            <div className="column is-3">
+            <div className="column is-4">
               <div className="cartImg">
                 <img src={Cart} style={{ paddingLeft: "10px" }} />
                 <div className="myorder">My Order</div>
               </div>
             </div>
-            <div className="column is-4"></div>
+            <div className="column is-3"></div>
             <div className="column is-5">
               <div className="itemNo">Items : 4 </div>
               <div className="totalC">Total : 400</div>
@@ -45,17 +45,14 @@ export default function Footer() {
             bottom: 0,
           },
           content: {
-            position: "absolute",
-            top: 20,
-            left: 1,
-            right: 1,
-            bottom: 1,
-            border: "1px solid #ccc",
+            position: "fixed",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
             background: "#F9F9FF",
-            overflow: "none",
+            overflowX: "hidden",
             outline: "none",
-            borderTopLeftRadius: "25px",
-            borderTopRightRadius: "25px",
           },
         }}
       >

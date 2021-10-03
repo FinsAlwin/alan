@@ -20,7 +20,7 @@ export default function Popular() {
         Popular Dishes
       </h6>
       <div className="container">
-        <div style={{ overflowY: "auto" }}>
+        <div style={{ overflowY: "hidden" }}>
           <div className="columns is-mobile">
             <div className="column">
               <Link to="#" onClick={toggleModal}>
@@ -104,23 +104,21 @@ export default function Popular() {
         style={{
           overlay: {
             position: "fixed",
-            top: 2,
-            left: 2,
-            right: 2,
-            bottom: 2,
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
           },
           content: {
-            position: "absolute",
-            top: "20%",
-            left: 2,
-            right: 2,
-            bottom: 2,
-            border: "1px solid #ccc",
+            position: "fixed",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+
             background: "#fff",
-            overflowY: "none",
+            overflowX: "hidden",
             outline: "none",
-            borderTopLeftRadius: "25px",
-            borderTopRightRadius: "25px",
           },
         }}
       >
@@ -132,7 +130,6 @@ export default function Popular() {
 
         <Drawer />
       </Modal>
-      ;
     </Fragment>
   );
 }

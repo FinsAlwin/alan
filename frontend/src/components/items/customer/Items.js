@@ -15,127 +15,7 @@ export default function Items() {
   return (
     <Fragment>
       <div className="itemContainer">
-        <div className="row">
-          <div className="column is-6">
-            <Link to="#" onClick={toggleModal}>
-              <div className="itemCard">
-                <div className="itemImage">
-                  <img src={noimage} />
-                </div>
-                <div className="itemsName">Vegetables Meat</div>
-                <div className="itemsPrice">50.00</div>
-                <div className="starDiv">
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star unchecked"></span>
-                  <span className="fa fa-star unchecked"></span>
-                </div>
-              </div>
-            </Link>
-          </div>
-
-          <div className="column is-6">
-            <Link to="#" onClick={toggleModal}>
-              <div className="itemCard">
-                <div className="itemImage">
-                  <img src={noimage} />
-                </div>
-                <div className="itemsName">Vegetables Meat</div>
-                <div className="itemsPrice">50.00</div>
-                <div className="starDiv">
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star unchecked"></span>
-                  <span className="fa fa-star unchecked"></span>
-                </div>
-              </div>
-            </Link>
-          </div>
-
-          <div className="column is-6">
-            <Link to="#" onClick={toggleModal}>
-              <div className="itemCard">
-                <div className="itemImage">
-                  <img src={noimage} />
-                </div>
-                <div className="itemsName">Vegetables Meat</div>
-                <div className="itemsPrice">50.00</div>
-                <div className="starDiv">
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star unchecked"></span>
-                  <span className="fa fa-star unchecked"></span>
-                </div>
-              </div>
-            </Link>
-          </div>
-
-          <div className="column is-6">
-            <Link to="#" onClick={toggleModal}>
-              <div className="itemCard">
-                <div className="itemImage">
-                  <img src={noimage} />
-                </div>
-                <div className="itemsName">Vegetables Meat</div>
-                <div className="itemsPrice">50.00</div>
-                <div className="starDiv">
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star unchecked"></span>
-                  <span className="fa fa-star unchecked"></span>
-                </div>
-              </div>
-            </Link>
-          </div>
-
-          <div className="column is-6">
-            <Link to="#" onClick={toggleModal}>
-              <div className="itemCard">
-                <div className="itemImage">
-                  <img src={noimage} />
-                </div>
-                <div className="itemsName">Vegetables Meat</div>
-                <div className="itemsPrice">50.00</div>
-                <div className="starDiv">
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star unchecked"></span>
-                  <span className="fa fa-star unchecked"></span>
-                </div>
-              </div>
-            </Link>
-          </div>
-
-          <div className="column is-6">
-            <Link to="#" onClick={toggleModal}>
-              <div className="itemCard">
-                <div className="itemImage">
-                  <img src={noimage} />
-                </div>
-                <div className="itemsName">Vegetables Meat</div>
-                <div className="itemsPrice">50.00</div>
-                <div className="starDiv">
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star unchecked"></span>
-                  <span className="fa fa-star unchecked"></span>
-                </div>
-              </div>
-            </Link>
-          </div>
-
+        <div className="columns is-mobile">
           <div className="column is-6">
             <Link to="#" onClick={toggleModal}>
               <div className="itemCard">
@@ -184,23 +64,21 @@ export default function Items() {
         style={{
           overlay: {
             position: "fixed",
-            top: 2,
-            left: 2,
-            right: 2,
-            bottom: 2,
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
           },
           content: {
-            position: "absolute",
-            top: "20%",
-            left: 2,
-            right: 2,
-            bottom: 2,
-            border: "1px solid #ccc",
+            position: "fixed",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+
             background: "#fff",
-            overflowY: "none",
+            overflowX: "hidden",
             outline: "none",
-            borderTopLeftRadius: "25px",
-            borderTopRightRadius: "25px",
           },
         }}
       >

@@ -20,7 +20,7 @@ export default function CategoryFront() {
 
       <div className="container">
         <div className="columns is-mobile">
-          <div className="column is-3">
+          <div className="column is-4">
             <Link to="#" onClick={toggleModal}>
               <div className="catIcon">
                 <div className="catImg">
@@ -30,75 +30,23 @@ export default function CategoryFront() {
               </div>
             </Link>
           </div>
-          <div className="column is-3">
+          <div className="column is-4">
             <Link to="#" onClick={toggleModal}>
               <div className="catIcon">
                 <div className="catImg">
                   <img src={noimage} />
                 </div>
-                <div className="catName">Category 2</div>
+                <div className="catName">Category 1</div>
               </div>
             </Link>
           </div>
-          <div className="column is-3">
+          <div className="column is-4">
             <Link to="#" onClick={toggleModal}>
               <div className="catIcon">
                 <div className="catImg">
                   <img src={noimage} />
                 </div>
-                <div className="catName">Category 3</div>
-              </div>
-            </Link>
-          </div>
-          <div className="column is-3">
-            <Link to="#" onClick={toggleModal}>
-              <div className="catIcon">
-                <div className="catImg">
-                  <img src={noimage} />
-                </div>
-                <div className="catName">Category 4</div>
-              </div>
-            </Link>
-          </div>
-        </div>
-        <div className="columns is-mobile">
-          <div className="column is-3">
-            <Link to="#" onClick={toggleModal}>
-              <div className="catIcon">
-                <div className="catImg">
-                  <img src={noimage} />
-                </div>
-                <div className="catName">Category 5</div>
-              </div>
-            </Link>
-          </div>
-          <div className="column is-3">
-            <Link to="#" onClick={toggleModal}>
-              <div className="catIcon">
-                <div className="catImg">
-                  <img src={noimage} />
-                </div>
-                <div className="catName">Category 6</div>
-              </div>
-            </Link>
-          </div>
-          <div className="column is-3">
-            <Link to="#" onClick={toggleModal}>
-              <div className="catIcon">
-                <div className="catImg">
-                  <img src={noimage} />
-                </div>
-                <div className="catName">Category 7</div>
-              </div>
-            </Link>
-          </div>
-          <div className="column is-3">
-            <Link to="#" onClick={toggleModal}>
-              <div className="catIcon">
-                <div className="catImg">
-                  <img src={noimage} />
-                </div>
-                <div className="catName">Category 8</div>
+                <div className="catName">Category 1</div>
               </div>
             </Link>
           </div>
@@ -117,17 +65,14 @@ export default function CategoryFront() {
             bottom: 0,
           },
           content: {
-            position: "absolute",
-            top: 20,
+            position: "fixed",
+            top: 0,
             left: 0,
             right: 0,
             bottom: 0,
-            border: "1px solid #ccc",
             background: "#F9F9FF",
-            overflow: "none",
+
             outline: "none",
-            borderTopLeftRadius: "25px",
-            borderTopRightRadius: "25px",
           },
         }}
       >
